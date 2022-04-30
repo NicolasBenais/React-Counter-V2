@@ -6,7 +6,7 @@ import AddAndDeleteButtons from "./components/Add And Delete Buttons";
 function App() {
   const [counter, setCounter] = useState([0]);
   return (
-    <div>
+    <div className="main">
       {/* Header */}
 
       <header>
@@ -33,7 +33,7 @@ function App() {
 
       {/* Footer */}
       <footer>
-        <div>
+        <div className="credits">
           Made with <span className="bold"> React </span> at
           <span className="bold"> Le Reacteur </span> by
           <span className="bold"> Nicolas</span>.

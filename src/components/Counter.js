@@ -1,6 +1,6 @@
 const Buttons = ({ counter, setCounter, number, index }) => {
   return (
-    <div className="counter">
+    <div key={index} className="counter">
       <div className="frame-and-btns">
         <button
           className={number > 0 ? "minus-btn-on" : "minus-btn-off"}
