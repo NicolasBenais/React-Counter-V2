@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* -------- HEADER -------- */
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #112b3c;
+  padding: 0 80px;
+}
+
+.fa-calculator,
+h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-calculator {
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* -------- ADD AND DELETE BUTTONS */
+
+.add-del-btns {
+  /* border: solid black 2px; */
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.reset,
+.btn-on,
+.btn-off {
+  width: 180px;
+  font-size: 22px;
+  color: white;
+  border: none;
+}
+
+.btn-on,
+.btn-off {
+  margin: 0 20px;
+  height: 100%;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.reset,
+.minus-btn-on,
+.minus-btn-off,
+.plus-btn-on,
+.plus-btn-off {
+  border-radius: 4px;
+}
+
+.btn-on,
+.minus-btn-on,
+.plus-btn-on,
+.reset {
+  background-color: #f66b0e;
+  transition: transform 120ms;
+}
+
+.btn-off,
+.minus-btn-off,
+.plus-btn-off {
+  background-color: #c0c5cd;
+}
+
+/* -------- COUNTER -------- */
+
+.global-counter {
+  /* border: solid blue 2px; */
+  display: flex;
+  justify-content: space-around;
+  height: 240px;
+  margin: 0 80px;
+}
+
+.counter {
+  /* border: black solid 2px; */
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-and-btns {
+  /* border: solid red 2px; */
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frame {
+  background-color: #205375;
+  color: white;
+  border-radius: 8px;
+  height: 96px;
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.minus-btn-on,
+.minus-btn-off,
+.plus-btn-on,
+.plus-btn-off {
+  height: 48px;
+  width: 48px;
+  border: none;
+  color: white;
+}
+
+.reset {
+  margin: auto;
+  height: 32px;
+}
+
+.btn-on:active,
+.minus-btn-on:active,
+.plus-btn-on:active,
+.reset:active {
+  transform: scale(0.97);
+}
+
+/* -------- FOOTER -------- */
+
+footer {
+  height: 39px;
+  background-color: #efefef;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
 }
