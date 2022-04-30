@@ -183,3 +183,17 @@ footer {
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 390px) {
+  header {
+    justify-content: center;
+    padding: 4px;
+  }
+
+  h1 {
+    margin-left: 8px;
+  }
+  .fa-calculator {
+    margin: 0;
+  }
+}
